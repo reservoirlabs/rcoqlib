@@ -1,0 +1,32 @@
+R-CoqLib: general-purpose Coq libraries and tactics.
+
+Version 1.0 (2015-12-04)
+
+Copyright (C) 2015 Reservoir Labs Inc.
+All rights reserved.
+
+This library is distributed under the GNU General Public License,
+version 3.0 or (at your option) any later version. See LICENSE for
+more legal information on use and distribution of R-CoqLib.
+
+This library requires Coq 8.5beta2.
+
+Summary of subdirectories (each of which corresponds to its logical
+path with the same name):
+
+rcoqlib: general-purpose Coq libraries and tactics.
+
+Installation: assuming that you already have a standard installation
+of Coq 8.5beta2, GNU make.
+
+  ./configure && make
+
+After building, you do not need to move the files anywhere else (and,
+by the way, `make install' does not work). The build system
+automatically generates a ./run-coqide.sh script to edit the sources
+with CoqIDE (if installed on your system), as well as local load path
+configuration files for Emacs+ProofGeneral (if installed on your
+system). If you want to compile code against R-CoqLib, just specify
+`-R <thisdir>/rcoqlib rcoqlib' to Coq and its relevant tools (coqc,
+coq_makefile, etc.), where <thisdir> is the absolute path to the
+directory containing this README.

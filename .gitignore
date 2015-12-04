@@ -1,0 +1,9 @@
+dir-locals
+Makefile
+*.aux
+.dir-locals.el
+*.glob
+*.v.d
+*.vo
+run-coqide.sh
+*~
